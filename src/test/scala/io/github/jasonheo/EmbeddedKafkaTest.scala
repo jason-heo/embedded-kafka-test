@@ -52,8 +52,8 @@ class EmbeddedKafkaTest extends FlatSpec with Matchers with EmbeddedKafka {
           //
           // partition=1, timestamp=200, offset=0, key=9128, value=8911
           // partition=1, timestamp=210, offset=1, key=7444, value=5715
-          // partition=1, timestamp=220, offset=2, key=6943,value=953
-          // partition=0, timestamp=100, offset=0, key=849, value=5978
+          // partition=1, timestamp=220, offset=2, key=6943, value=9530
+          // partition=0, timestamp=100, offset=0, key=8490, value=5978
           // partition=0, timestamp=110, offset=1, key=3768, value=4133
           println(
             s"partition=${record.partition()}, " +
