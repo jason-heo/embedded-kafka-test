@@ -74,8 +74,6 @@ class EmbeddedKafkaTest extends FlatSpec with Matchers with EmbeddedKafka {
       getOffsetOfTimestamp(adminClient, topic, partitionNum=0, timestamp=105L) should be(1)
       getOffsetOfTimestamp(adminClient, topic, partitionNum=1, timestamp=215L) should be(2)
 
-      Thread.sleep(100000)
-
       adminClient.close()
     }
   }
